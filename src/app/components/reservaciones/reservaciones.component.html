@@ -1,0 +1,11 @@
+<h2 >Reservaciones</h2>
+<div class="row" style="margin-bottom: 10px;">
+    <div class="card" style="width: 18rem;" *ngFor="let dia of diasSemana" >
+        <div class="card-body">
+          <h5 class="card-title">{{ dia }}</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" *ngFor="let horario of horarios"><span> {{horario}}</span>&nbsp;<span><strong><small>(25)</small></strong></span></li>
+          </ul>
+        </div>
+      </div>
+</div>
